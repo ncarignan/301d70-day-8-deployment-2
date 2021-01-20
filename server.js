@@ -17,6 +17,7 @@ require('dotenv').config();
 const cors = require('cors');
 const superagent = require('superagent'); // getting data from a url
 const pg = require('pg');
+pg.defaults.ssl=true;
 
 // ==== setup the application (server) ====
 const app = express();
